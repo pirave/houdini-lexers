@@ -12,7 +12,7 @@ setup(
     install_requires="Pygments",
     entry_points="""
         [pygments.lexers]
-        vex=lexers.vex:VexLexer
-        hscript=lexers.vex:HScriptLexer
+        vex=houdini-lexers.vex:VexLexer
+        hscript=houdini-lexers.vex:HScriptLexer
     """
 )
