@@ -39,7 +39,7 @@ class VexLexer(RegexLexer):
             (r'__(vex|vex_major|vex_minor)\b', Keyword.Reserved),
             (r'__(LINE|FILE|DATE|TIME)__\b', Keyword.Reserved),
             ('[a-zA-Z_][a-zA-Z0-9_]*:', Name.Label),
-            ('[a-zA-Z_][a-zA-Z0-9_]*', Name),
+            ('[a-zA-Z_@][a-zA-Z0-9_@]*', Name),
         ],
         'root': [
             include('whitespace'),
